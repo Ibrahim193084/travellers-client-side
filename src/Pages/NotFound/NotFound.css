@@ -1,0 +1,12 @@
+.notfound{
+    height: 600px;
+    width: 1700px;
+    margin: 0;
+}
+
+@media only screen and (max-width: 688px){
+    .notfound{
+        height: 300px;
+        width: 400px;
+    }
+}
