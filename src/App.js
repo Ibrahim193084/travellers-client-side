@@ -7,6 +7,9 @@ import Login from './Pages/Login/Login';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AuthProvider from './Context/AuthProvider';
 import NotFound from './Pages/NotFound/NotFound';
+import MyBooking from './Pages/MyBooking/MyBooking';
+import ManageAllBooking from './Pages/ManageAllBooking/ManageAllBooking';
+import AddNewTour from './Pages/AddNewTour/AddNewTour';
 function App() {
   return (
     <div className="app">
@@ -22,6 +25,15 @@ function App() {
          <PrivateRoute path="/tours/:id">
            <Book></Book>
          </PrivateRoute>
+         <Route path="/mybooking">
+           <MyBooking></MyBooking>
+         </Route>
+         <Route path="/manageallbooking">
+           <ManageAllBooking></ManageAllBooking>
+         </Route>
+         <Route path="/addanewtour">
+           <AddNewTour></AddNewTour>
+         </Route>
          <Route path="/login">
            <Login></Login>
          </Route>

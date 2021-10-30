@@ -25,8 +25,8 @@ const Navigation = () => {
         <Nav.Link as={HashLink} className="ms-4" to="/home#contact">Contact</Nav.Link>
         {
            user?.email && <NavDropdown className="ms-4" title="Booking info" id="basic-nav-dropdown">
-           <NavDropdown.Item><Link to="/mybooks" style={{textDecoration:'none',color:'black'}}>My Books </Link></NavDropdown.Item>
-           <NavDropdown.Item><Link to="/manageallbooks" style={{textDecoration:'none',color:'black'}}>Manage All Books</Link></NavDropdown.Item>
+           <NavDropdown.Item><Link to="/mybooking" style={{textDecoration:'none',color:'black'}}>My Booking </Link></NavDropdown.Item>
+           <NavDropdown.Item><Link to="/manageallbooking" style={{textDecoration:'none',color:'black'}}>Manage All Booking</Link></NavDropdown.Item>
          </NavDropdown>
        }
        {

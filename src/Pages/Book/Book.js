@@ -31,7 +31,7 @@ const Book = () => {
         .then(data =>{
             console.log(data)
             if(data.insertedId){
-                alert('Booking information added successfully')
+                alert('Booking Information Added Successfully')
                 reset()
             }
         })
@@ -64,6 +64,7 @@ const Book = () => {
       <input type="email" {...register("email")} placeholder="Email" defaultValue={user.email} />
       <input type="text" {...register("tourplace")} placeholder="Tour place" defaultValue={tour.name} />
       <input type="text" {...register("address")} placeholder="Address" required />
+      <input type="number" {...register("phone")} placeholder="Phone number" required />
       <input type="number" {...register("cost")} defaultValue={tour.cost} />
       <input type="date" {...register("date")} placeholder="date" required />
       <input className="btn btn-primary" type="submit" value="Submit" />
