@@ -5,11 +5,12 @@ import Navigation from '../Shared/Navigation/Navigation';
 
 const ManageAllBooking = () => {
     const [booking, setBooking] = useState([])
+   
     useEffect(()=>{
         fetch('https://young-headland-50696.herokuapp.com/book')
         .then(res => res.json())
         .then(data => setBooking(data))
-    },[])
+    },[booking])
     console.log(booking)
 
        //delete all users booking 
@@ -46,7 +47,7 @@ fetch(url,{
             .then(data => {
                 console.log(data)
                 if(data. modifiedCount>0){
-                    alert('Status updated successfully');
+                    alert('Status updated successfully')
                 }
              
             })
