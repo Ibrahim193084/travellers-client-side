@@ -30,6 +30,8 @@ fetch(url,{
 })
 }
     }
+
+    //update status
   
     const handleUpdate = id =>{
         const url = `https://young-headland-50696.herokuapp.com/book/${id}`
@@ -48,9 +50,6 @@ fetch(url,{
                 }
              
             })
-      
-      
-
     }
 
     return (
