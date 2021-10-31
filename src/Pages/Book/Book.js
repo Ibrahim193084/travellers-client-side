@@ -20,6 +20,7 @@ const Book = () => {
     
     const onSubmit = data => {
         console.log(data)
+        data.status="Pending"
         fetch('https://young-headland-50696.herokuapp.com/book',{
             method: 'POST',
             headers: {
@@ -63,9 +64,9 @@ const Book = () => {
       <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" defaultValue={user.displayName} />
       <input type="email" {...register("email")} placeholder="Email" defaultValue={user.email} />
       <input type="text" {...register("tourplace")} placeholder="Tour place" defaultValue={tour.name} />
+      <input type="number" {...register("cost")} defaultValue={tour.cost} />
       <input type="text" {...register("address")} placeholder="Address" required />
       <input type="number" {...register("phone")} placeholder="Phone number" required />
-      <input type="number" {...register("cost")} defaultValue={tour.cost} />
       <input type="date" {...register("date")} placeholder="date" required />
       <input className="btn btn-primary" type="submit" value="Submit" />
 

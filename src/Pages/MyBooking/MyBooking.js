@@ -37,7 +37,7 @@ fetch(url,{
 })
 }
     }
-
+ 
     return (
         <div>
             <Navigation/>
@@ -55,6 +55,7 @@ fetch(url,{
       <th>Tour Place</th>
       <th>Date</th>
       <th>Cost</th>
+      <th>Status</th>
       <th>Delete</th>
 
     </tr>
@@ -82,6 +83,9 @@ fetch(url,{
               </td>
               <td>
                   {book.cost}
+              </td>
+              <td className="text-danger">
+              {book.status}
               </td>
               <td>
               <i onClick={()=>handleDelete(book._id)} className="fas fa-trash text-danger fs-5"></i>

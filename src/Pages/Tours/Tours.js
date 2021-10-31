@@ -17,7 +17,7 @@ const Tours = () => {
         <div id="tours">
             <h1 className="text-center text-danger my-5">TOURS</h1>
             {
-                isLoading ?<Spinner style={{marginLeft: '850px'}} className="text-center" animation="border" variant="danger"></Spinner>
+                isLoading ?<Spinner style={{marginLeft: '700px'}} className="text-center" animation="border" variant="danger"></Spinner>
                 :
                 <Row xs={1} md={3} className="g-2">
                 {tours.map(tour => <Tour key={tour._id}tour={tour}></Tour>)}

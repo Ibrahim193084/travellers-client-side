@@ -38,7 +38,7 @@ const AddNewTour = () => {
       <input type="number" {...register("cost")}placeholder="Tour Cost" />
       <textarea type="text" {...register("description")}placeholder="Description" />
       <input type="text" {...register("img")}placeholder="Img Url" />
-      <input className="btn btn-primary" type="submit" />
+      <input className="btn btn-primary" type="submit" value="Submit" />
     </form>
         </div>
         <Footer></Footer>
